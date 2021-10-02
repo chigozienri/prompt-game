@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Player Order Randomiser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="pages">
+    <li class="chat page">
+      <div class="titleArea">
+        <span class="title">Player Order Randomiser</span>
+      </div>
+      <div class="box">
+        <span class="subtitle">Most Recent Randomised Player Order</span>
+        <div class="playerOrder"></div>
+      </div>
+      <div class ="box">
+        <span class="subtitle">Current Players</span>
+        <div class="currentPlayers"></div>
+      </div>
+      <div class="logArea">
+        <span class="subtitle">Logs</span>
+        <ul class="messages"></ul>
+      </div>
+      <input type="button" class="randomiseButton" value="Randomise Player Order"/>
+    </li>
+    <li class="login page">
+      <div class="form">
+        <h3 class="title">What's your nickname?</h3>
+        <input class="usernameInput" type="text" maxlength="14" />
+        <div class="duplicateNameDiv">
+          <span class="duplicateName">Nickname already used!</span>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
